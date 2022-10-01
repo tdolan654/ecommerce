@@ -235,6 +235,7 @@ button:active {
 
 .highlight__wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -294,7 +295,8 @@ button:active {
 }
 .highlight__subtitle {
     font-size: 20px;
-    margin-bottom: 16px;    
+    margin-bottom: 16px;   
+    text-align: center; 
 }
 
 
@@ -310,11 +312,13 @@ button:active {
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
     width: 25%;
     padding: 24px;
+    text-align: center;
 }
 
 .book__img {
@@ -412,6 +416,30 @@ footer {
 }
 
 
+/* small phones tablets and large smartphones */
+
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;   
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 50%;
+    }
+}
+
 @media (max-width:550px) {
     .nav__links {
         display: none;
@@ -420,4 +448,10 @@ footer {
     .btn__menu {
         display: block;
     }
+
+    .highlight {
+        width: 100%;
+        padding: 16px;
+    }
 }
+
